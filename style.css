@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Matemasie";
+  src: url(./Matemasie-Regular.ttf);
+}
+
 :root {
   height: 100%;
   font-family: fantasy;
@@ -54,8 +59,8 @@ img {
 #text_over_image {
   position: relative;
   width: 100%;
-  height: 25%;
-  background-color: rgba(0,0,0,0.5);
+  height: 7rem;
+  background-color: rgba(0,0,0,0.75);
   top: -70%;
   left: 0;
   
@@ -65,7 +70,14 @@ img {
 }
 
 #text_over_image>p {
+  font-family: "Matemasie";
+  font-size: 6.5rem;
   width: max-content;
+  height: 100%;
+  margin: 0;
+  color: white;
+  position: relative;
+  top: -2rem;
 }
 
 .text {
