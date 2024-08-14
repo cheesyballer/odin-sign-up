@@ -1,0 +1,129 @@
+:root {
+  height: 100%;
+  font-family: fantasy;
+  overflow: hidden;
+  
+  --header: whitesmoke;
+  --background: white;
+  --text-background: whitesmoke;
+}
+
+body {
+  height: calc(100% - 4rem);
+  margin: 0;
+  
+  padding-top: 4rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 4rem;
+  
+  background-color: var(--header);
+  filter: drop-shadow(0 2px 2px black);
+  
+  display: flex;
+  justify-content: space-between;
+}
+
+#links {
+  display: flex;
+  width: 15%;
+  justify-content: space-around;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.picture {
+  flex: 1;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+#text_over_image {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  background-color: rgba(0,0,0,0.5);
+  top: -70%;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#text_over_image>p {
+  width: max-content;
+}
+
+.text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color: var(--background);
+}
+
+.call_to_action {
+  height: 34%;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  height: 66%;
+  background-color: var(--text-background);
+  padding: 2%;
+  box-sizing: border-box;
+  
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 50%;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form>div {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  background: var(--background)
+}
+
+form>div>div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 50%;
+  height: 25%;
+  border: solid 10px black;
+}
+
+.form>div {
+  background: var(--background);
+  width: 25%;
+  height: 100%;
+}
