@@ -11,6 +11,10 @@
   --header: whitesmoke;
   --background: white;
   --text-background: whitesmoke;
+  --text: black;
+  --button-border: black;
+  --large-text: white;
+  --div-over-image: rgba(0,0,0,0.75);
 }
 
 body {
@@ -33,6 +37,7 @@ body {
   
   display: flex;
   justify-content: space-between;
+  color: var(--text);
 }
 
 #links {
@@ -58,11 +63,14 @@ img {
 
 #text_over_image {
   position: relative;
-  width: 100%;
+  width: max-content;
   height: 7rem;
-  background-color: rgba(0,0,0,0.75);
-  top: -70%;
+  background-color: var(--div-over-image);
+  top: -40%;
   left: 0;
+  margin: auto;
+  
+  border-radius: 10px;
   
   display: flex;
   justify-content: center;
@@ -75,6 +83,7 @@ img {
   width: max-content;
   height: 100%;
   margin: 0;
+  
   color: white;
   position: relative;
   top: -2rem;
@@ -88,6 +97,7 @@ img {
   align-items: center;
   
   background-color: var(--background);
+  color: var(--text);
 }
 
 .call_to_action {
@@ -132,6 +142,10 @@ button {
   width: 50%;
   height: 25%;
   border: solid 10px black;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  
+  color: var(--text);
 }
 
 .form>div {
