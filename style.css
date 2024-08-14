@@ -8,11 +8,11 @@
   font-family: fantasy;
   overflow: hidden;
   
-  --header: whitesmoke;
-  --background: white;
-  --text-background: whitesmoke;
-  --text: black;
-  --button-border: black;
+  --header: #0A81D1;
+  --background: #314CB6;
+  --text-background: #0A81D1;
+  --text: white;
+  --button-border: #6461A0;
   --large-text: white;
   --div-over-image: rgba(0,0,0,0.75);
 }
@@ -146,6 +146,8 @@ button {
   font-size: 2.5rem;
   
   color: var(--text);
+  border-color: var(--button-border);
+  background-color: var(--background);
 }
 
 .form>div {
