@@ -227,3 +227,12 @@ label {
 em, i {
   color: var(--em-text);
 }
+
+input:valid:not([id="email"]) {
+  border-color: lightgreen;
+}
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+  filter: drop-shadow(1px 3px 2px lightcoral);
+}
