@@ -114,6 +114,14 @@ img {
   top: -2rem;
 }
 
+div>#text_over_image+a {
+  font-size: 1rem;
+  position: relative;
+  top: -25%;
+  left: 0;
+  color: white;
+}
+
 .text {
   flex: 2;
   display: flex;
