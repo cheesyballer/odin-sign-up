@@ -30,7 +30,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  width: auto;
   height: 4rem;
   
   background-color: var(--header);
@@ -39,12 +39,36 @@ body {
   display: flex;
   justify-content: space-between;
   color: var(--text);
+  
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#home_button>h1 {
+  transition: color 0.25s, letter-spacing 2s;
+}
+
+#home_button:hover {
+  width: 20%;
+}
+
+#home_button:hover h1 {
+  width: 100%;
+  color: var(--em-text);
+  letter-spacing: 5px;
+  font-style: italic;
 }
 
 #links {
   display: flex;
-  width: 15%;
+  width: 20%;
   justify-content: space-around;
+}
+
+#links>p {
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .content {
