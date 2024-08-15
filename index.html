@@ -33,17 +33,17 @@
                 <form action="" method="post">
                     <div>
                         <div><label for="username"><b>*Username:</b></label></div>
-                        <input type="text" name="username" id="user">
+                        <input type="" name="username" id="user" placeholder="lordofthegame" required>
                     </div>
 
                     <div>
                         <div><label for="email"><b>Email:</b></label></div>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="death@thirdworlds.net">
                     </div>
 
                     <div>
                         <div><label for="password"><b>*Password:</b></label></div>
-                        <input type="password" name="password" id="pw">
+                        <input type="password" name="password" id="pw" minlength="6" maxlength="40" pattern=".*\d.*" required>
                     </div>
 
                     <button type="submit">Submit</button>
