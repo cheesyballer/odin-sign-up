@@ -12,8 +12,9 @@
   --background: #314CB6;
   --text-background: #0A81D1;
   --text: white;
+  --em-text: #edc9ab;
   --button-border: #6461A0;
-  --large-text: white;
+  --large-text-over-image: #edc9ab;
   --div-over-image: rgba(0,0,0,0.75);
 }
 
@@ -84,7 +85,7 @@ img {
   height: 100%;
   margin: 0;
   
-  color: white;
+  color: var(--large-text-over-image);
   position: relative;
   top: -2rem;
 }
@@ -197,4 +198,8 @@ label {
   margin-top: 0;
   font-size: 1.5rem;
   line-height: 3rem;
+}
+
+em, i {
+  color: var(--em-text);
 }
